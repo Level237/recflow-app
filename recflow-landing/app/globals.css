@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+:root {
+  --background: #323233;
+  --foreground: #ffffff;
+  --muted: rgba(255, 255, 255, 0.4);
+  --line: rgba(255, 255, 255, 0.1);
+  --fill: rgba(255, 255, 255, 0.05);
+  --accent: #f97316;
+  --accent-ink: #ffffff;
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-fill: var(--fill);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --font-sans: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  background: var(--background);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+.dock-fit {
+  container-type: inline-size;
+  width: 100%;
+}
+
+.dock-fit-inner {
+  width: max-content;
+  margin-inline: auto;
+  zoom: min(1, calc(100cqi / 688px));
+}
+
+.atmosphere-dust {
+  background-image: radial-gradient(
+      rgba(255, 255, 255, 0.22) 0.7px,
+      transparent 0.8px
+    ),
+    radial-gradient(rgba(249, 115, 22, 0.18) 0.6px, transparent 0.7px);
+  background-size: 140px 140px, 90px 90px;
+  background-position: 0 0, 40px 60px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
