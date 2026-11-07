@@ -10,7 +10,7 @@ Installers are on the [latest release](https://github.com/Kether-Labs/recflow/re
 
 | System | File | Video |
 | --- | --- | --- |
-| Linux | `.deb` (`.rpm` when published) | WebM |
+| Linux | `.deb` (`.rpm`) | WebM |
 | Windows 10 and 11 | `.exe` installer | MP4 |
 
 macOS is not available.
