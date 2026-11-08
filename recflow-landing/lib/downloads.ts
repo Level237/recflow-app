@@ -1,5 +1,5 @@
 const ASSETS = {
-  exe: "https://github.com/Level237/recflow-app/releases/download/v0.1.0/Recflow_0.1.0_windows_x64-setup.exe",
+  exe: "https://github.com/Level237/recflow-app/releases/download/v0.1.0/recflow.exe",
   deb: "https://github.com/Level237/recflow-app/releases/download/v0.1.0/Recflow_0.1.0_amd64.deb",
   rpm: "https://github.com/Level237/recflow-app/releases/download/v0.1.0/Recflow-0.1.0-1.x86_64.rpm",
 } as const;
@@ -7,7 +7,7 @@ const ASSETS = {
 export const DOWNLOADS = {
   windows: {
     label: "Windows",
-    detail: "Installer (.exe)",
+    detail: "Windows app (.exe)",
     href: ASSETS.exe,
   },
   linux: {
