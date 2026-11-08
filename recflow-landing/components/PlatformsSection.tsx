@@ -29,11 +29,11 @@ const SPECS = {
   },
   windows: {
     name: "Windows",
-    badge: "Desktop app",
+    badge: "Desktop installer",
     summary:
       "The same dock on Windows. Record the screen, pause, and stop. Recflow writes an MP4 file on your computer.",
     rows: [
-      { label: "Install", value: ".exe" },
+      { label: "Install", value: ".exe installer" },
       { label: "Video", value: "MP4" },
       { label: "Capture", value: "Display or window" },
       { label: "Sound", value: "System audio and microphone" },
